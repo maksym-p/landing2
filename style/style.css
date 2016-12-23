@@ -50,12 +50,14 @@ h3 {
 .btn {
 	display: block;
 	background-color: #4169E1;
-	border-radius: 15px;
+	border-radius: 10px;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #fff;
 	letter-spacing: 0.2em;
 	transition: all 250ms ease-in-out;
+	width: 220px;
+	padding: 15px;
 }
 
 .btn:hover {
@@ -74,13 +76,13 @@ section {
 
 @media (max-width: 1080px) {
 	section {
-		padding: 120px 50px;
+		padding: 120px 40px;
 	}
 }
 
 @media (max-width: 410px) {
 	section {
-		padding: 120px 30px;
+		padding: 80px 15px;
 	}
 }
 
@@ -99,6 +101,11 @@ hr {
 	margin: 35px 0;
 	width: 40%;
 	border-color: #6495ED;
+}
+
+input:focus {
+	 outline: 0;
+	 border-color: #6495ED !important;
 }
 
 /*HEADER*/
@@ -128,10 +135,6 @@ hr {
 	display: flex;
 }
 
-.page-header .main-menu li {
-	margin: 0 5px;
-}
-
 .page-header .main-menu li:first-child {
 	margin-left: 0;
 }
@@ -144,7 +147,7 @@ hr {
 	display: block;
 	min-width: 80px;
 	padding: 8px 12px;
-	border-radius: 15px;
+	border-radius: 10px;
 	text-align: center;
 	transition: all 250ms ease-in-out;
 }
@@ -180,12 +183,21 @@ hr {
 }
 
 .banner a {
-	margin-top: 110px;
-	padding: 15px 80px;
+	margin-top: 80px;
+}
+
+@media (max-width: 1080px) {
+	section.banner {
+		padding-top: 100px;
+	}
+}
+@media (max-width: 700px) {
+	section.banner {
+		padding-top: 140px;
+	}
 }
 
 /*PHOTO*/
-
 section.photo-alb {
 	justify-content: space-between;
 	background: #eee;
@@ -310,37 +322,39 @@ section.photo-alb {
 }
 
 form {
+	margin-top: 40px;
 	align-items: center;
-	justify-content: center;
 	flex-wrap: wrap;
 	max-width: 800px;
-	width: 85%;
+	width: 100%;
 }
 
 .newslet form input[type="email"] {
 	padding: 15px;
 	font-size: 1em;
-	flex-basis: 70%;
 	color: #505050;
+	margin-right: 15px;
+	flex-basis: 65%;
+	border-radius: 10px;
+	border: 2px solid #ccc;
 }
 
 .newslet form input.btn {
 	border: 0;
-	padding: 15px 50px;
-	margin-left: 20px;
 	font-size: 1em;
-	flex-basis: 25%;
+	text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 840px) {
 	.newslet form {
 		flex-direction: column;
 	}
 	.newslet form input[type="email"] {
 		width: 100%;
+		margin-right: 0;
 	}	
 	.newslet form input.btn {
-		margin: 15px 0 0;
+		margin-top: 20px;
 	}
 }
 
@@ -350,7 +364,8 @@ form {
 	background: #505050;
 	display: flex;
 	flex-direction: column;
-	padding: 55px 40px;
+	justify-content: center;
+	padding: 30px;
 	text-align: center;
 }
 
